@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="search-box">
+      <h3 class="search-heading">Search Tags</h3>
+      <div class="search-input">
+        <ul class="search-input__history">
+          <li class="search-input__history-item">
+            nodejs
+            <i class="fas fa-times" onclick="deleteHistory(event)"></i>
+          </li>
+          <li class="search-input__history-item">
+            reactjs
+            <i class="fas fa-times" onclick="deleteHistory(event)"></i>
+          </li>
+        </ul>
+        <div class="search-input__text">
+          <input type="text" placeholder="Type and enter" />
+        </div>
+      </div>
+      <div class="search-footer">
+        <button class="btn btn-pri">Remove All</button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
